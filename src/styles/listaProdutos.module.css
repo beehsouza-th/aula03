@@ -1,0 +1,12 @@
+.blocolista{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #191970;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
