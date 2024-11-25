@@ -1,13 +1,13 @@
 import styles from '../styles/listaProdutos.module.css'
-
+import Header from './Header';
 export default function ListaProdutos({lista}) {
        return(
+        <>
 
             <main>
-                <h1>Lista Produtos</h1>
                <ul className={styles.blocolista}>
                  {lista.map(produto => (
-                  <li key = {produto.id}>
+                  <li class = "item-produtos" key  = {produto.id}>
                       <h2>{produto.title}</h2>
                       <p>{produto.description}</p>
                       <p>Preço: R${produto.price}</p>
@@ -16,5 +16,6 @@ export default function ListaProdutos({lista}) {
                   ))}
                 </ul>
             </main>
+            </>
         );
 }
