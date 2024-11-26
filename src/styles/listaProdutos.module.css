@@ -1,48 +1,96 @@
-.blocolista{
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #06622918; 
+}
+header {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    align-items: center; 
+    height: 80px; 
+    padding: 20px;
+    background-color: #096d45; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-produtos {
+    color: #096d45;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    color: #191970;
+    gap: 20px; /* Espaçamento entre os cards */
 }
 
-header{
+
+.blocolista {
+    color: #0c311c8c;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos que não cabem na linha se movam para a próxima linha */
+    gap: 20px; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    justify-content: center; /* Centraliza os cards no contêiner */
+}
+
+.blocolista li {
+    background-color: #fff; 
+    border-radius: 8px; 
+    width: 280px; /* Largura fixa para os cards */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.blocolista li:hover {
+    transform: translateY(-10px); 
+    box-shadow: rgba(0, 0, 0, 0.15); 
+}
+
+.blocolista h2 {
+    font-size: 18px;
+    color: #073015;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blocolista p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.blocolista .preco {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+.blocolista img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .blocolista li {
+        width: 100%; /* Em telas menores, os cards ocupam 100% da largura */
+        max-width: 350px; /* Largura máxima do card */
+    }
+}
+
+footer{
     display: flex;
     justify-content: center;
-    height: 30px; 
-    padding: 30px ;
-    margin: -20px ;
+    align-items: center; 
+    height: 80px; 
+    padding: 20px;
     background-color: #096d45;
-
 }
- h1{
-    display: flex;
-    text-align: center;
-    color: rgb(223, 222, 232);
-    margin-top: -5px;
-    
- }
-
-main{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-    overflow-x: auto;
-    
-    }
-.blocolista{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-    overflow-x: auto;
-    
-}
-
-
-  

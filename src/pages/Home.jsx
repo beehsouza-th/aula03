@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ListaProdutos from "../Components/ListaProdutos";
 import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 export default function App() {
   
@@ -23,6 +24,7 @@ export default function App() {
     <>
     <Header/>
     <ListaProdutos lista ={lista} />
+    <Footer/>
     </>
   );
 }
