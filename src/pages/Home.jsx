@@ -73,7 +73,7 @@ export default function App() {
         placeholder="Pesquisar por produto"
         onChange={(event) => setBuscarproduto(event.target.value)} // Atualiza o estado da pesquisa. //filtrarProdutos()  e renderizar essa função
       />
-    <ListaProdutos lista ={lista} /> 
+    <ListaProdutos lista ={filtrarProdutos()} /> 
   
     <Footer/>
     </>
