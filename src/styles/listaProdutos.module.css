@@ -39,7 +39,7 @@ header {
 .blocolista li {
     background-color: #fff; 
     border-radius: 8px; 
-    width: 280px; /* Largura fixa para os cards */
+    width: 280px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -81,8 +81,8 @@ header {
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .blocolista li {
-        width: 100%; /* Em telas menores, os cards ocupam 100% da largura */
-        max-width: 350px; /* Largura máxima do card */
+        width: 100%; 
+        max-width: 350px; 
     }
 }
 
